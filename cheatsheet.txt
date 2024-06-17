@@ -1,0 +1,4 @@
+# Depois de criar a chave na OpenAI
+# (https://platform.openai.com/api-keys)
+
+export OPENAI_API_KEY="api-key-pegar-o-nome-no-site"
