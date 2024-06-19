@@ -2,3 +2,9 @@
 # (https://platform.openai.com/api-keys)
 
 export OPENAI_API_KEY="api-key-pegar-o-nome-no-site"
+
+# baixa o .py com search engine (versão mais simples) criada nesse vídeo (https://github.com/alexeygrigorev/build-your-own-search-engine)
+wget https://raw.githubusercontent.com/alexeygrigorev/minsearch/main/minsearch.py
+
+# baixa o .json com as referências (contexto) para as respostas, as faqs dos cursos anteriores
+wget https://raw.githubusercontent.com/alexeygrigorev/minsearch/main/minsearch.py
