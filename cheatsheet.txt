@@ -8,3 +8,24 @@ wget https://raw.githubusercontent.com/alexeygrigorev/minsearch/main/minsearch.p
 
 # baixa o .json com as referências (contexto) para as respostas, as faqs dos cursos anteriores
 wget https://raw.githubusercontent.com/alexeygrigorev/minsearch/main/minsearch.py
+
+
+# Rodar Elastic Serach 
+
+-m 4GB  # Adicionei essa linha pois ficava parando abruptamente
+(https://stackoverflow.com/questions/73307726/elasticsearch-error-elasticsearch-exited-unexpectedly-when-trying-to-start-e)
+
+docker run -it \
+    --rm \
+    --name elasticsearch \
+    -p 9200:9200 \
+    -p 9300:9300 \
+    -e "discovery.type=single-node" \
+    -e "xpack.security.enabled=false" \
+    -m 4GB \
+    docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+
+
+# Testar (outro termianal)
+
+curl http://localhost:9200
